@@ -1,3 +1,8 @@
+/*
+This component is responsible for getting the bowler data from the API and compiling it 
+into a list of cards
+*/
+
 import { useEffect, useState } from "react";
 import type { bowler } from "./types/bowler";
 import BowlerCard from "./BowlerCard";

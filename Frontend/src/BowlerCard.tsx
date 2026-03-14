@@ -1,3 +1,7 @@
+/*
+This component takes a bowler and builds a card for that bowler, returnning it to BowlerList
+*/
+
 import type { bowler } from "./types/bowler";
 
 function BowlerCard({ bowlerFirstName, bowlerLastName, bowlerMiddleInit, bowlerAddress, bowlerCity, bowlerState, bowlerZip, bowlerPhoneNumber, team }: bowler) {
