@@ -1,5 +1,5 @@
 export type team = {
-    teamid: number,
-    teamname: string,
-    captainid: number
+    teamID: number,
+    teamName: string,
+    captainID: number
 };

@@ -7,8 +7,9 @@ function BowlerList() {
 
     useEffect(() => {
         const fetchBowlers = async () => {
-            const response = await fetch('https://localhost:5000/Bowlers');
+            const response = await fetch('http://localhost:4000/api/BowlingLeague');
             const data = await response.json();
+            console.log(data);
             setBowlers(data);
         }
 

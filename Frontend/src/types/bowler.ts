@@ -1,15 +1,15 @@
 import type { team } from "./team";
 
 export type bowler = {
-    bowlerid: number,
-    bowlerlastname: string,
-    bowlerfirstname: string,
-    bowlermiddleinit: string,
-    bowleraddress: string,
-    bowlercity: string,
-    bowlerstate: string,
-    bowlerzip: string,
-    bowlerphonenumber: string,
-    teamid: number,
+    bowlerID: number,
+    bowlerLastName: string,
+    bowlerFirstName: string,
+    bowlerMiddleInit: string,
+    bowlerAddress: string,
+    bowlerCity: string,
+    bowlerState: string,
+    bowlerZip: string,
+    bowlerPhoneNumber: string,
+    teamID: number,
     team: team
 };
