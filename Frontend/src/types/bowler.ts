@@ -1,6 +1,6 @@
 import type { team } from "./team";
 
-export type food = {
+export type bowler = {
     bowlerid: number,
     bowlerlastname: string,
     bowlerfirstname: string,
