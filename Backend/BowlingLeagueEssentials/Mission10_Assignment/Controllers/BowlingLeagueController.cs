@@ -17,7 +17,10 @@ namespace Mission10_Assignment.Controllers
 
         [HttpGet(Name = "GetBowlers")]
         public IEnumerable<Bowler> Get() {
-            IEnumerable<Bowler> bowlerList = _bowlingContext.Bowlers.Include(b => b.Team).Where(b => b.Team.TeamName == "Marlins" || b.Team.TeamName == "Sharks").ToList();
+            IEnumerable<Bowler> bowlerList = _bowlingContext.Bowlers
+                                            .Include(b => b.Team)
+                                            .Where(b => b.Team != null && (b.Team.TeamName == "Marlins" || b.Team.TeamName == "Sharks"))
+                                            .ToList();
             return (bowlerList);
         }
 
